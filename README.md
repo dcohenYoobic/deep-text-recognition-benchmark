@@ -116,6 +116,16 @@ image_release.zip contains failure case images and benchmark evaluation images w
 pip3 install fire
 python3 create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/
 ```
+The structure of data folder as below.
+```
+data
+├── gt.txt
+└── test
+    ├── word_1.png
+    ├── word_2.png
+    ├── word_3.png
+    └── ...
+```
 At this time, `gt.txt` should be `{imagepath}\t{label}\n` <br>
 For example
 ```
@@ -155,7 +165,6 @@ Please consider citing this work in your publications if it helps your research.
   author={Baek, Jeonghun and Kim, Geewook and Lee, Junyeop and Park, Sungrae and Han, Dongyoon and Yun, Sangdoo and Oh, Seong Joon and Lee, Hwalsuk},
   booktitle = {International Conference on Computer Vision (ICCV)},
   year={2019},
-  note={to appear},
   pubstate={published},
   tppubtype={inproceedings}
 }
